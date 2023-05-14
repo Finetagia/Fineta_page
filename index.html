@@ -1,0 +1,675 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>연세대학교 혁신학과 석사지원</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="fd66689f-426a-4320-85a0-428b91929b4a" class="page sans"><header><h1 class="page-title">연세대학교 혁신학과 석사지원</h1></header><div class="page-body"><figure id="4df4d626-b043-4239-a70c-5d088333c911"><div class="source"><a href="%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A6%E1%84%83%E1%85%A2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%AD%20%E1%84%92%E1%85%A7%E1%86%A8%E1%84%89%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%AA%20%E1%84%89%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A1%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AF%E1%86%AB%20fd66689f426a432085a0428b91929b4a/application_form_Annso1.pdf">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/19fd1245-d0a5-46a5-8372-4a746de94e61/application_form_Annso1.pdf</a></div></figure><figure id="498ec2ef-ad5d-4bf7-aa79-6d687530f575"><div class="source"><a href="%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A6%E1%84%83%E1%85%A2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%AD%20%E1%84%92%E1%85%A7%E1%86%A8%E1%84%89%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%AA%20%E1%84%89%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A1%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AF%E1%86%AB%20fd66689f426a432085a0428b91929b4a/StudyPlan.pdf">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df309071-14e4-4db7-93dc-b9f5d29bf5d5/StudyPlan.pdf</a></div></figure><div id="47beb528-8127-44af-b976-c47a46e7e8aa" class="column-list"><div id="9a46b466-cc68-4055-8441-486d48ea28ba" style="width:29.166666666666664%" class="column"><ul id="17a45ad1-d140-41ec-914c-1eac91aa1438" class="bulleted-list"><li style="list-style-type:disc">비대면 면접은 인성 면접이 아닌 전공지식 면접을 할 확률이 굉장히 높다.</li></ul><ul id="1a678a1c-0f9b-4b24-93c8-9fbf5895452b" class="bulleted-list"><li style="list-style-type:disc">대표키워드 1개, 하위 키워드 3개를 중심으로 답변을 엮어나가라</li></ul><ul id="d9c9aec9-df38-4f58-a240-fadcbfc8469f" class="bulleted-list"><li style="list-style-type:disc">TMI가 중요. 내가 컨택한 교수님을 제외한 다른 교수들은 나에게 관심없음. 연구계획서와 자기소개도 안 읽는 경우가 많음. 따라서 쓴 내용이라고 해서 자기소개 안하면 안됨.</li></ul><ul id="e99f1cd6-b501-4856-8355-d6ee63f37c6d" class="bulleted-list"><li style="list-style-type:disc">답변은 1분이 넘어가지 않게</li></ul><ul id="0b0503b3-b3ba-4a20-ab00-455ca0f24451" class="bulleted-list"><li style="list-style-type:disc">단답형이 아닌 단계적, 논리적답변 (A-B-C를 거쳐 D가된다)</li></ul><ul id="a61ba1ca-e85a-4028-8b23-0d9dfa67f984" class="bulleted-list"><li style="list-style-type:disc">솔직하게</li></ul></div><div id="bc9a2dde-8178-4bac-bfa5-3c0a25425e64" style="width:29.166666666666664%" class="column"><figure id="6c770ee4-788d-4545-a80c-262ff9e570fb" class="image"><a href="%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A6%E1%84%83%E1%85%A2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%AD%20%E1%84%92%E1%85%A7%E1%86%A8%E1%84%89%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%AA%20%E1%84%89%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A1%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AF%E1%86%AB%20fd66689f426a432085a0428b91929b4a/Untitled.png"><img style="width:480px" src="%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A6%E1%84%83%E1%85%A2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%AD%20%E1%84%92%E1%85%A7%E1%86%A8%E1%84%89%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%AA%20%E1%84%89%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A1%E1%84%8C%E1%85%B5%E1%84%8B%E1%85%AF%E1%86%AB%20fd66689f426a432085a0428b91929b4a/Untitled.png"/></a></figure><p id="9cec1dc1-f2dc-4dea-b181-691c966e4c3d" class="">Practice in S.T.A.R (Situation, Task Action, and Result) or C.A.R (Context, Action, and Result)</p></div><div id="396ebf04-b839-4458-bf92-70a007b63d49" style="width:41.6666666666667%" class="column"><h2 id="1d4a7325-a483-4db0-b97f-0113cf6a0101" class="">My Keyword</h2><p id="37b7c3db-0e36-4f5e-a7a0-ff549666b55e" class="">Enthusiasm</p><p id="03c38cb3-9c8a-4d8f-992d-de224c18e12a" class="">the ability to work under pressure</p><p id="b2a784e8-8248-4e6d-a7e3-99172f01531a" class="">Organization skills</p><p id="be016955-9e80-47bf-b950-cf79beeb5e22" class="">Punctuality (기한에 맞게 일을 끝내는 능력)</p><p id="9e9f8bc9-aa5e-48fc-9332-c9c43c285c4b" class="">Adding new knowledge to our field is what keeps researchers going(by MOOC of HECMontrealX)</p><p id="3e51b58d-1d59-4275-ac26-6203de56e64a" class="">
+</p></div></div><p id="1c005290-99b6-4e27-bbd0-761dfbfa0986" class="">
+</p><div id="4e158670-1485-45cb-933e-e272a030f623" class="column-list"><div id="1b3d7cbb-3caf-457c-b07a-ef0c5019c49f" style="width:41.666666666666664%" class="column"><p id="1e37d22f-88f8-4fff-8fb2-9c623d3bdffe" class="">1. 자기소개</p><p id="5e2e1ed5-1a52-4202-a3e6-7481b513f2bd" class="">일상생활에서 모르고 지나치는 문제에 대해 해결방안을 제시해 더 나은 삶을 만드는 사람이 되고 싶어 국문학과에 진학했습니다. 한국 문화와 문학을 배우는 것이 일상의 사소한 것들이라도 짚고 넘어갈 수 있는 비판적 사고의 기반이 되리라 생각했고, 토론과 에세이 발표 수업에서만큼은 최고학점을 받을 만큼 타인의 생각이나 특정 사회 문화적인 주제를 분석하는 것을 잘했습니다. 하지만 교내활동으로 동아리 문집 발간, 교수님 인터뷰를 채록하는 활동을 하면서 처음으로 글로 생각을 표현하는 방법에 한계를 느꼈습니다. 이에 직관을 시각화할 수 있는 기술로 디자인에 관심을 두게 되었고 졸업 후 직업으로까지 이어졌습니다.</p><p id="2224553e-afea-496f-82f8-b44a568183c7" class="">실무 디자인은 제가 원했던 방향인 일상의 문제를 발견, 해결방안을 제시함으로써 사람들이 더 나은 삶을 살게 하는 것과는 거리가 멀었습니다. 그러나 관련된 일을 찾을 것이라 믿었고, 디자인 업무를 계속하던 차에 신규 제품 디자인을 맡으면서 UX,HCI분야를 알게 되었습니다. 서비스에 대한 사용자의 니즈를 파악하는 것과 낯선 매체에서도 사용자가 편하게 원하는 목적을 달성할 수 있게끔 설계하는 것이 문제를 발견하고 해결방안을 제시하는 과정과 같아, 호기심에 리서치 방법론을 공부하게 되었습니다. 그리고 어설프나마 실무에 응용해보았는데, 기본기가 없어 진행 과정이 매끄럽지 않아 보다 체계적인 공부의 필요성을 느껴 대학원 진학을 희망하게 되었습니다.</p></div><div id="0e0e7945-ce1a-434f-9216-7a26bb207005" style="width:50%" class="column"><h2 id="ef8746cf-ce8b-4a33-915f-a33310da6e4f" class="">Introduce myself</h2><p id="b8ac7d4e-8938-4368-a45f-6d4fd57a94c2" class="">  Make a better life for people is the goal of my life. To being think centered on humans, I majored in Korean Literature and Language. Analyzing human behavior and mindset through Korean Literature was one of my leverages. However, as supervising the club&#x27;s anthology and conducting record Professor&#x27;s interview as research, I discovered that writing is not enough to present implication. For improving that, I studied graphic design as a way of visualizing intuition.
+  Design became a job after graduation and it was far from my goal which &#x27;Make a better life for people&#x27;. Then I found out UX and HCI methodologies when my work expands to new product design. I was fascinated by UX and HCI because they seemed to correspond to my goal as &#x27;Make a better life for people&#x27;. </p><p id="025dae44-b7d5-43fc-9b2d-214b312890dc" class=""> That enthusiasm led to practiced research oneself collecting prospective user&#x27;s data through a survey about new product samples on myself. In the process of analyzing the result and presenting it to the team, I felt a lack of systematic knowledge.</p></div><div id="cd09a980-74f9-4801-b4d4-dd2c08aa3f49" style="width:8.333333333333352%" class="column"><p id="0ef02035-9453-40c5-a3f1-332c2ad76465" class="">여백</p></div></div><div id="aec539b9-abae-4a75-940a-506b7f586390" class="column-list"><div id="c06c132c-2286-4506-aaea-e6f484dc5986" style="width:41.666666666666664%" class="column"><p id="e6fa90ee-cc82-4d09-82a6-41ea288cb28e" class="">2. 진학동기</p><p id="43d4f973-6142-4261-9c9a-55451d365614" class="">‘어떻게 해야 많이 팔릴까’가 아닌 ‘무엇을 어떻게 제공해야 할까’라는 UX,HCI 관점이 흥미로웠습니다. 또한 도출한 시사점을 반영하여 서비스를 만드는 것은 제가 해온 활동들의 융합이라고 느꼈습니다. 학부생 때는 문학 작품을 분석해 일상의 문제에 대해 가져야 하는 삶의 태도를 글로 썼고, 회사에서는 생산 시 문제를 점검하고 개선하는 디자인 작업을 반복했기 때문입니다.</p><p id="e151d630-2166-4b36-b77b-3adc9ecdeabb" class="">자연스럽게 UX,HCI를 실무에 응용해보자는 자신감이 생겼습니다. 방법론 중의 하나인 프로토타입 테스트를 제안하여 설문과 인터뷰 진행 후 그 결과를 분석해 신규 제품디자인 팀에 공유했습니다. 이를 통해 향후 양산 시 제품의 질과 개발팀이 진행하고 있던 AR을 활용한 Virtual fitting Room 제작에도 도움이 될 가이드라인을 제시하고 싶었으나 흐지부지되었습니다. 제품이 제공되어야만 하는 가치와 사용자의 니즈가 명확하지 않았고, 데이터 기반의 통계 결과가 없어 설득력이 부족했기 때문입니다. 특히 다양한 방법론, 개발과 평가 방법에 대해 무지했기 때문에 이를 충족할 수 있는 전문적인 공부를 하고 싶었습니다. 따라서 글로벌 프로젝트로 다양한 방법론을 적용할 수 있고, 리서치에서 디자인 및 개발과 평가까지의 과정을 경험할 수 있는 연세대학교 혁신학과 대학원에 진학하여 UX, HCI 분야의 전문가로 성장하고 싶습니다.</p></div><div id="eccfa942-abb9-400b-8ed4-3e5d85d83a8d" style="width:50%" class="column"><h2 id="9637e6cb-9038-4dfe-80ec-eb26faed1100" class="">Motivation of apply</h2><p id="d804a926-a480-4101-87a8-82da7c113d6f" class=""> The way of UX thinking like &#x27;What we offer, not How to sell more&#x27; was inspiring me. In addition, suggest service based on analysis research was the integration of my activities. Major and work experience can be the reason. In major, I had explored an attitude that has to be in life. And I had improved design for production in the company iteratively.</p><p id="21cef6fc-1809-4f17-b02a-4c505f3dda73" class="">  The more I learn UX, the More self-confidence grew. I had proposed a user test for a new product undertaken a survey and analyzed it. As presenting survey result to team for guideline of design and production but it couldn&#x27;t attract attention. Not only the goal of product but also users&#x27; needs were ambiguous. Also, lack of objective evidence as quantitative research influenced.</p><p id="caef21b6-68d4-43c5-b196-b0ee02bb771e" class="">
+</p></div><div id="6142d7b2-f0c0-42b9-976b-90af050d67bd" style="width:8.333333333333345%" class="column"><p id="0a8acfd9-7bbb-44ec-bdc1-2ea22c999e99" class="">여백</p></div></div><div id="8b881b6f-4a66-43f6-8463-d0b38c5750e8" class="column-list"><div id="1d9acd6d-70e9-42ce-be89-80226a92142a" style="width:43.75%" class="column"><p id="2d0117e0-4a74-4ac6-a04e-4079a3770e6d" class="">3. 연구 계획</p><p id="632c955a-9557-459a-a63a-73518a409672" class="">사람들이 일상생활에서 서로를 잘 이해할 수 있게끔 하는 것이 연구 목표입니다. 일상생활에서 가장 중요한 것은 사람 간의 소통입니다. 인간은 사회적 동물인 만큼 관계를 새로 맺고 또 지속할 수 있는 능력이 풍요로운 삶을 가져다주기 때문입니다. 사람이 가지는 인지능력 중에 이러한 상호 의사소통 능력을 키워주는 것은 감성 지능이라고 생각합니다. 감정을 잘 이해하고 관리할 수 있게 하는 감성 지능은 단순히 대화 상대, 집단구성원과의 관계를 친밀히 유지하고 확장할 수 있게 할 뿐만 아니라 사회의 안정성에까지 영향을 미칩니다. 이러한 점에서 사람 간의 소통을 돕는다는 것, 나아가 감성 지능을 증진토록 하는 방법을 연구하는 것은 곧 멘탈헬스와 이어지게 되고, 해당 분야와의 연계로 연구의 의미를 확장할 수도 있습니다.</p><p id="962f1411-c0c9-404e-befa-85708b127d61" class="">따라서 저는 상호 의사소통을 돕는 소재의 연구를 하며 상황에 따라 사용자의 목적에 맞는 커뮤니케이션을 편하게 할 수 있는 매체를 탐색하는 방향, 감성 지능과 같은 인지능력 사용을 촉진하는 시스템을 개발하는 방향 총 두 가지를 고려할 것입니다. 이를 위한 사용자 리서치 단계에서는 사용자의 니즈와 목적이 어떤 인간 본성에 의해 촉발된 것인지 분석하는 것이 근원적인 해결책을 가져다준다고 생각합니다. 예를 들어 최근 사람들이 인스타그램, 페이스북 메신저, 디스코드, 트위터 등 온라인으로 아는사람 혹은 낯선 사람과 소통을 하는 점은 ‘나의 신상을 알리기는 싫지만 어느 정도의 노출은 하면서 이야기는 하고 싶은’ 욕구에 의한 것임을 추측할 수도 있습니다. 저는 이 욕구는 실제로 만나본 적 없는 소위 ‘랜선 친구’와의 관계에서 나타나는 특이점이라고 생각했고, 원래의 목적인 ‘선택적 자기 노출’을 지키면서 관계는 친밀하게 확장할 방법을 찾아보는 것이 의미가 있다고 생각했습니다. 이를 위해 온라인으로 낯선 사람과 친해질 때 문제가 되는 요인을 알기 위하여 설문조사를 했을 때, 사람들은 안전을 문제로 ‘랜선 친구’와의 관계 확장에 대해 거부감을 가졌습니다. 저는 ‘선택적 자기 노출’을 안전하게 지키되 친밀한 관계로 확장할 수단으로 실제 AR기술을 이용해 아바타로 소통하는 기능을 생각했습니다. 이어서 AR 아바타로 소통한다면, 아바타의 범위에 따른 실제 현실 노출도에 따라 사용자가 느끼는 친밀감 및 안전성의 차이가 있는지 확인하기 위해 설문조사를 진행했습니다. 전신 AR 아바타보다 부분 AR 마스크를 쓴 사용자에게 더욱 친밀감을 느끼고, 사적인 이야기를 더 많이 주고받을 가능성이 크다는 결과가 나왔고, 이를 바탕으로 영상 채팅 중심의 SNS를 디자인했습니다. 그러나 AR 기술 활용을 중심으로 신경을 쓰다 보니 사용자가 꼭 영상 채팅 기능을 사용하게끔 만드는 흐름으로 이어졌습니다. 특히 Information Architecture를 설계할 때 AR 영상 채팅을 하기 위한 서비스로 잘못 치우쳐져 있음을 느꼈고 본래의 사용자 니즈인, ‘선택적 자기 노출’을 지키면서 관심 있는 주제로 자유롭게 소통할 수 있게끔 수정해야 했습니다.</p><p id="1c0caaeb-47e9-4f53-8153-08693a22a34a" class="">위 경험으로 인해 저는 연구에 있어서 세 가지 점을 유의하여 계획해야 함을 깨달았습니다. 첫째는 기술을 사용하기 위해서가 아닌 자연스러운 경험을 촉진하기 위해 기술 사용을 고려해야 하는 점이고, 둘째는 연구를 평가 검증하여 개선점을 찾아야 한다는 점입니다. 마지막으로 가장 중요한 것은 이 두 가지는 충분한 리서치로 사용자를 이해하고 난 다음 이루어져야 한다는 것입니다. 충분한 리서치란 양적 연구와 질적 연구 방법을 모두 이용하는 것입니다. 질적 연구는 피실험자와 인터뷰 및 설문을 통해 심층적인 의견을 들을 수도 있지만, 연구자의 질문 및 태도에 따라서 의식적인 의도의 결과가 나올 수도 있습니다. 따라서 특정한 의식과 관계없이 사용자의 직관적인 행동을 파악할 수 있는 데이터 기반의 통계분석인 양적 연구까지 동반해야 합니다. 통계분석을 할 때는 통계 결과를 다각도로 살피고 다른 항목과 엮어 대조도 해보며 결과가 의미하는 바를 신중히 해석할 것입니다. 예를 들자면 앱 사용에 있어 어느 페이지에서 이탈률이 높은지 알아보고 개선하는 것을 목표로 통계를 분석해야 하는 상황에서, 특정 페이지의 사용자 체류 시간이 높게 나타날 수도 있습니다. 이 결과를 사용자가 해당 페이지의 콘텐츠를 주의 깊게 보고 있는 것이라 여겨 개선할 필요가 없다고 여길 수도 있지만, 네비게이션에 문제가 있어 무엇을 해야 할지 잘 모르는 상황일 수도 있습니다. 페이지의 체류 시간이 짧다고 해서 사용 이탈률이 높은 것만은 아닌 것처럼, 통계 결과를 분석할 때는 한 가지 관점에 매몰되어 개선사항을 놓치는 일이 없도록 해야 합니다.</p><p id="d3de0a81-5b6f-4b03-a4dc-aba9a8a03c59" class="">앞서 말한 세 가지 유의점을 인지하지 않고 연구를 계획하게 된다면, 이정표가 없이 목적지를 향해 걷는 것과 같은 상황이 연출될 수 있습니다. 본래 연구의 목적을 잃기 쉽고, 서비스 개발의 경우 사용성이 낮을 수도 있으며 나아가 사회적인 이슈까지 불러올 수도 있다고 생각합니다. 예를 들어 코로나 19로 인한 비대면 수업이 시작되면서 2020년 전국 중고등학교에서 공통으로 중위권 학생이 줄어드는 등 학력 양극화 현상 및 학력 저하 현상이 나타났습니다. 공교육의 목적 ‘격차 없는 교육’을 유지케 한 기능 중 하나인 등교수업 대신 화상 수업을 시작했기 때문입니다. 교사와 학생들이 어떤 목적과 니즈로 수업에 임하는지 고려하지 못한 점, 공교육에서 등교수업이 가지는 의미를 이해하지 못하고 화상기술로 해결하려고 한 점, 화상 수업 서비스의 사용자 경험 평가를 충분히 가지지 못해 개선사항을 도출하지 못한 점이 학습 격차를 벌리는 결과를 낳은 것입니다.</p><p id="d0d56e97-a922-4ba8-bf7c-f69bdcfd32c4" class="">기술을 활용한 사용자 친화적인 서비스는 현대인의 일상생활에 스며들고 있습니다. 이케아에서 AR 서비스를 통해 사용자의 공간 상품을 배치해볼 수 있고, 유튜브 알고리즘 시스템은 사용자가 자주 보는 영상을 기반으로 취향에 맞는 플레이리스트를 제공하기도 합니다. UX, HCI 분야에서 기술과 사람 간의 상호작용 탐구한다는 것은 이렇듯 사용자가 원하는 목적을 달성할 수 있도록 기술로써 돕는 것을 뜻합니다. 저는 이에 더해 앞서 말한 세 가지 유의점인 양적 질적 연구를 수반한 충분한 조사,경험을 돕기 위한 도구로서의 기술 사용, 평가 검증을 통해 개선점 도출해야 함을 인지하며 연구에 임할 것입니다. 이를 기반으로 사람들이 일상생활에서 서로를 잘 이해할 수 있도록 상호의사소통 능력과 감성 지능을 증진하는 서비스를 개발하여 사람 간의 거리를 메우는 UX, HCI 전문가가 되고 싶습니다.</p></div><div id="a0586f80-030c-4255-b05c-212be48a4a1c" style="width:56.25%" class="column"><h2 id="5d551a36-a346-4809-b981-ba515f0ebc9b" class="">Aspiration and plan for study</h2><p id="9221a8f5-4ac6-4ab7-8f52-655e2998beb3" class="">makes people understand each other</p><p id="7388de49-d185-4ec3-935a-ec25921b7ee5" class="">In our life, the most significant thing is communication. </p><p id="f8be428f-1bbb-45c7-b61b-014721e008cf" class="">assist communication </p><p id="f8aae721-d079-4654-9ea5-11903d5f1e66" class="">promote cognitive ability especially emotional intelligence.</p><p id="8ce61dc2-6ab6-4298-bad5-11a50e441ad1" class="">
+</p></div></div><p id="273882fe-13c1-45db-a05a-3b4f14bad921" class="">
+</p></div></article></body></html>
